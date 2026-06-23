@@ -2,7 +2,10 @@ table "stripe_data" {
   auth = false
   schema {
     int id
-    int user_id { table = "user", description = "Reference to local user" }
+    int user_id {
+      table = "user"
+      description = "Reference to local user"
+    }
     text stripe_customer_id? { description = "Stripe Customer ID (cus_xxx)" }
     text event_id? { description = "Stripe webhook event ID (evt_xxx) for idempotency" }
     text event_type? { description = "Stripe event type (e.g. payment_intent.succeeded)" }
