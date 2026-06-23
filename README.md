@@ -51,7 +51,7 @@ Claude will clone the repo and push the functions and tables to your workspace.
 3. Copy your Secret Key (starts with sk_)
 4. Navigate to Developers > Webhooks and create an endpoint to get your signing secret (starts with whsec_)
 5. In Xano, set the environment variable STRIPE_API_KEY to your Secret Key
-6. Set the environment variable STRIPE_WEBHOOK_SECRET to your webhook signing secret
+6. Set the environment variable STRIPE_SIGNING_SECRET to your webhook signing secret
 
 Environment variables used by this integration:
 
